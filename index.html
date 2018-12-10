@@ -1,76 +1,17 @@
 <!DOCTYPE html>
 <html>
+	
 <head>
+
 <title>Rehsus The Mage</title>
 <meta name="author" content="BGK">
-	
+<link rel="stylesheet" href="style.css">
+
 </head>
-<style>
-
-	.bgk{
-		line-height:40px;
-		display: table;
-		position:fixed;
-		padding:40px;
-		margin:0;
-		top:0;
-		left:0;
-		width: 100%;
-		height: 100%;
-
-	}
-
-	.button{
-		background:#F00;
-		display: table;
-	}
-	
-
-
-	.bgk button{			
-		background-color: #4CAF50; /* Green */
-	    border: none;
-	    color: white;
-	    padding: 16px 32px;
-	    text-align: center;
-	    text-decoration: none;
-	    font-size: 16px;
-	    margin: 4px 2px;
-	    -webkit-transition-duration: 0.4s; /* Safari */
-	    transition-duration: 0.4s;        
-		color:#ffffff;
-		font-family:Helvetica;
-		font-size:14px;
-		font-weight: bold;
-		color: white;
-		padding:10px 25px;
-		text-decoration:none;
-		margin:24px;
-	}
-	
-	.bgk button:active {
-		position:relative;
-		top:1px;
-	}	
-	.bgk button:focus {
-		outline:0;
-	}
-
-	.bgk {
-		padding-left: 30px;
-		padding-right: 50px;
-		padding-bottom: 20px;
-		height: 100%; 
-		width: 100%; 
-		background-position: right 20px top -200px;
-		background-repeat: no-repeat;
-		background-color: #435b49;
-
-	}
-</style>
 
 <div class = "bgk" >
 	
+	<div>
 	<button onclick="audioPlay('s1')">2 Hareket Yapcaz</button>
 	<audio id="s1" src="cutted/2hareketyapcaz.mp3" ></audio>
 
@@ -200,28 +141,13 @@
 	<button onclick="audioPlay('s43')">Legendary!</button>
 	<audio id="s43" src="cutted/oregorgor.mp3" ></audio>
      <br>
-     
-    
+	</div>    
 	
 	<audio id="dummy" src="audio/placeholder.mp3" ></audio>
 
 </div>
 
-<script>
 
-var current  = document.getElementById("dummy");
-
-function audioPlay(aid) {
-
-	current.pause();
-	current.currentTime = 0;
-	current = document.getElementById(aid);
-	var inc = document.getElementById(aid);
-	inc.play();
-
-}
-
-</script>
-
+<script src="app.js"></script>
 </body>
 </html>
