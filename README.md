@@ -1,2 +1,2 @@
 Rehsus The Mage <br>
-https://bgorkemk.github.io/RehsusTheMage/
+https://0xbgk.github.io/RehsusTheMage/
